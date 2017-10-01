@@ -8,6 +8,7 @@ before_install:
 install:
   - pip install ansible
   - "{ echo '[defaults]'; echo 'roles_path = ../'; } >> ansible.cfg"
+  - ssh-keygen -f $HOME/.ssh/id_rsa -t rsa -N ''
 
 env:
   - ANSIBLE_HOST_KEY_CHECKING=False
