@@ -1,0 +1,4 @@
+---
+sudoer: admin
+sudoer_public_keys:
+  - ~/.ssh/id_rsa.pub
