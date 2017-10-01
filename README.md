@@ -15,7 +15,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - { role: guillaumevincent.configure-ssh, sudoer: 'admin', sudoer_public_keys: ['~/.ssh/id_rsa.pub'] }
+         - { role: guillaumevincent.configure-sudoer, sudoer: 'admin', sudoer_public_keys: ['~/.ssh/id_rsa.pub'] }
 
 License
 -------
