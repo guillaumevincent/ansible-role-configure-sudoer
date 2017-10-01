@@ -8,7 +8,7 @@
   tasks:
     - name: Check /etc/sudoers.d/admin file exists
       stat:
-        path: "/etc/sudoers.d/{{ ADMIN_USERNAME }}"
+        path: "/etc/sudoers.d/{{ sudoer }}"
       register: stat_result
       changed_when: false
 
