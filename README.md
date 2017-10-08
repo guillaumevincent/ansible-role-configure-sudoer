@@ -1,23 +1,19 @@
-Configure sudoer
-================
+# ansible-role-sudoer
 
  * create sudoer
  * add public keys for sudoer 
 
-Role Variables
---------------
+## Role Variables
 
- * sudoer (default: admin)
- * sudoer_public_keys (default: ['~/.ssh/id_rsa.pub'])
+ * sudoer (default: `admin`)
+ * sudoer_public_keys (default: `['~/.ssh/id_rsa.pub']`)
 
-Example Playbook
-----------------
+## Example Playbook
 
-    - hosts: servers
+    - hosts: all
       roles:
          - { role: guillaumevincent.configure-sudoer, sudoer: 'admin', sudoer_public_keys: ['~/.ssh/id_rsa.pub'] }
 
-License
--------
+## License
 
 MIT
